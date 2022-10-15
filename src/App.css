@@ -1,38 +1,161 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.survey-form {
+  width: 400px;
+  height: 400px;
+  background-color: aquamarine;
+  border-radius: 8px;
+  box-shadow: 0 0 15px 1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-title,
+.finish-title {
+  display: grid;
+  place-items: center;
+  padding: 20%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: -20px;
+}
+.form-title h1 {
+  font-size: 25px;
+}
+.welcome-button {
+  width: 80px;
+  height: 5px;
+  font-weight: normal;
+  font-size: medium;
+  color: rgb(7, 5, 5);
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 5px 10px 30px;
+  margin-top: 150px;
+}
+.first-step-container,
+.form-female-container,
+.form-male-container,
+.finish-form-container {
+  margin: 20px;
+  font-size: 15px;
+  font-weight: normal;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-right: 200px;
+  width: 55%;
+}
+.first-label {
+  color: rgb(18, 11, 63);
+}
+.first-label,
+.input-radio-female {
+  padding-right: 95px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.brand-clothing {
+  margin-left: -8px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 5px;
+  color: rgb(18, 11, 63);
+}
+
+.brand-cosmetics {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: -20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: rgb(18, 11, 63);
+}
+
+.input-radio-male {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding-right: 108px;
+}
+#dropdown {
+  font-size: normal;
+  padding: 4px 4px 4px 4px;
+  padding-right: 30px;
+  margin-right: 20px;
+  margin-top: 5px;
+  font-family: sans-serif Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  border: 2px solid #2e2e05;
+  border-radius: 5px;
+}
+input {
+  border: 2px solid #2e2e05;
+  border-radius: 5px;
+}
+.checkbox-cosmetics,
+.checkbox-cars {
+  display: flex;
+  flex-flow: wrap column;
+  font-family: sans-serif Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-size: 13px;
+  margin-right: 80px;
+  margin-left: -60px;
+}
+.favorite-brand {
+  margin-left: -60px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-bottom: 5px;
+  color: rgb(18, 11, 63);
+}
+.form-check {
+  margin-left: 10px;
+}
+.form-checks {
+  margin-left: -60px;
+}
+.schwarzkoph {
+  margin-left: 35px;
+}
+.oriflame {
+  margin-left: 10px;
+}
+.avon {
+  margin-left: -12px;
+}
+.audi {
+  margin-left: -12px;
+}
+.bmw {
+  margin-left: -5px;
+}
+.finish-form {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgb(18, 11, 63);
+  margin-right: -120px;
+  margin-left: -50px;
+  padding-top: 20px;
 }
